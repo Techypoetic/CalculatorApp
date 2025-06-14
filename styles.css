@@ -1,0 +1,97 @@
+/*Parameters for the webpage*/
+body {
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/*Defining the calculator body*/
+.calculator {
+  background: #1f1f2e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 440px;
+}
+
+/*Defining the display of the calculator*/
+.display {
+  background: #2e2e5e;
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+  min-height: 70px;
+}
+
+/*Defining the arangment of the buttons*/
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+
+/*Button settigs for the numerical keys*/
+.btn {
+  background: #3b3b4f;
+  color: white;
+  width: 80px;
+  height: 52;
+  font-size: 1.4rem;
+  padding: 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#backspace {
+  background: #3b3b4f;
+  color: white;
+  width: 80px;
+  height: 52;
+  font-size: 1.4rem;
+  padding: 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.btn:hover {
+  background: #4c4c64;
+}
+
+.operator {
+  background: #f4a300;
+  color: white;
+  font-size: 1.4rem;
+  width: 75px;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+}
+
+.operator:hover {
+  background: #ffbb33;
+}
+
+.equal {
+  background: #c4c4c4;
+  color: black;
+  font-size: 1.4rem;
+  grid-area: 4 / 4 / 5 / 6;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
